@@ -1,0 +1,17 @@
+---
+title: Heart Disease Summary (Cleveland data)
+output: html_document
+---
+
+This report summarizes the UCI Cleveland heart disease data.
+
+## Table
+
+```{r, echo = FALSE}
+knitr::kable(readRDS("output/table1.rds"),
+             caption = "Mean values by heart disease status")
+```
+
+## Figure
+
+![Maximum heart rate by disease status](output/figure1.png)
