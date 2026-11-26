@@ -32,3 +32,13 @@ exact packages used to create the report, run this from the repo folder:
 This runs `renv::restore()` using the `renv.lock` file. After that, generate the report with:
 
     make report.html
+## Synchronizing the package repository
+
+This project uses `renv` to manage R package versions. To install the
+exact packages used to create the report, run this from the repo folder:
+
+    make install
+
+This runs `renv::restore()` using the `renv.lock` file. After that, generate the report with:
+
+    make report.html
